@@ -1,0 +1,109 @@
+.image-upload-section {
+    margin-top: 20px;
+ }
+ 
+ .image-upload-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+ }
+ 
+ .image-upload-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+ }
+ 
+ .image-upload-box {
+    width: 100%;
+    height: 100px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+ 
+ .image-upload-box:hover {
+    background-color: #f0f0f0;
+ }
+ 
+ .image-upload-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+ }
+ 
+ .image-upload-input {
+    display: none;
+ }
+ .totalSize {
+    padding: 20px;
+}
+
+.image-upload-section {
+    text-align: center;
+}
+
+.image-upload-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-upload-box {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-upload-label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+}
+
+.image-upload-input {
+    display: none;
+}
+
+.image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.upload{
+    border-radius: 5px;
+    padding: 8px;
+}
+.sell-btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    
+}
+.sell-btn button{
+    padding: 8px;
+    border-radius: 5px;
+}

@@ -1,0 +1,17 @@
+.direct{
+    height: 60px;
+    background: #002f3408;
+
+}
+.direct img{
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 40px;
+   
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
