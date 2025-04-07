@@ -24,7 +24,7 @@ function Product() {
         <div className="cards-container">
             {product.map((data) => (
                 <Link to={`/products/details/${data.id}`} className="card" key={data.id}>
-           
+
                     <img src={data.images?.[0] || '/placeholder.png'} alt={data.Title} />
                     <div>
                         <h3>{data.Title}</h3>
