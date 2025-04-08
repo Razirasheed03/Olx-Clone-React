@@ -58,7 +58,8 @@
   border-bottom: 1px solid #e8e8e8;
 }
 
-.tab, .tab-active {
+.tab,
+.tab-active {
   flex: 1;
   padding: 12px 0;
   text-align: center;
@@ -257,7 +258,7 @@
   .login-card {
     padding: 20px;
   }
-  
+
   .social-login {
     flex-direction: column;
   }
