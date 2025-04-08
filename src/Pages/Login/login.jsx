@@ -15,7 +15,7 @@ const Login = () => {
     event.preventDefault()
     setError("")
     setLoading(true)
-    
+
     try {
       if (signState === "Sign In") {
         await login(email, password)
@@ -37,61 +37,61 @@ const Login = () => {
       <div className="login-card">
         {/* <img src={logo} className='olx-logo' alt="OLX Logo" /> */}
         <div className="logo-placeholder">OLX</div>
-        
+
         <div className="tabs">
-          <button 
-            className={signState === "Sign In" ? "tab-active" : "tab"} 
+          <button
+            className={signState === "Sign In" ? "tab-active" : "tab"}
             onClick={() => setSignState("Sign In")}>
             Sign In
           </button>
-          <button 
-            className={signState === "Sign Up" ? "tab-active" : "tab"} 
+          <button
+            className={signState === "Sign Up" ? "tab-active" : "tab"}
             onClick={() => setSignState("Sign Up")}>
             Sign Up
           </button>
         </div>
-        
+
         {error && <div className="error-message">{error}</div>}
-        
+
         <form className="login-form">
           {signState === "Sign Up" && (
             <div className="form-group">
               <label htmlFor="name">Full Name</label>
-              <input 
+              <input
                 id="name"
-                value={name} 
-                onChange={(e) => setName(e.target.value)} 
-                type="text" 
-                placeholder="Enter your full name" 
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                type="text"
+                placeholder="Enter your full name"
                 required
               />
             </div>
           )}
-          
+
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input 
+            <input
               id="email"
-              value={email} 
-              onChange={(e) => setEmail(e.target.value)} 
-              type="email" 
-              placeholder="your.email@example.com" 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              placeholder="your.email@example.com"
               required
             />
           </div>
-          
+
           <div className="form-group">
             <label htmlFor="password">Password</label>
-            <input 
+            <input
               id="password"
-              value={password} 
-              onChange={(e) => setPassword(e.target.value)} 
-              type="password" 
-              placeholder="Enter your password" 
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              type="password"
+              placeholder="Enter your password"
               required
             />
           </div>
-          
+
           <div className="remember-container">
             <div className="remember">
               <input type="checkbox" id="remember-me" />
@@ -99,26 +99,26 @@ const Login = () => {
             </div>
             <a href="#" className="forgot-password">Forgot password?</a>
           </div>
-          
-          <button 
-            onClick={user_auth} 
-            type='submit' 
+
+          <button
+            onClick={user_auth}
+            type='submit'
             className="submit-btn"
             disabled={loading}
           >
             {loading ? "Processing..." : signState}
           </button>
         </form>
-        
+
         <div className="divider">
           <span>or continue with</span>
         </div>
-        
+
         <div className="social-login">
           <button className="social-btn google">Google</button>
           <button className="social-btn facebook">Facebook</button>
         </div>
-        
+
         <div className="login-footer">
           {signState === "Sign In" ? (
             <p>New to OLX? <a onClick={() => setSignState("Sign Up")}>Create an account</a></p>
